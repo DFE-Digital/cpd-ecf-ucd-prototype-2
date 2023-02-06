@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+	Confirmation page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+
+			<div class="govuk-panel govuk-panel--confirmation">
+				<h1 class="govuk-panel__title">
+					Your school has been sent a link
+				</h1>
+			 <!--  <div class="govuk-panel__body">
+					Your reference number<br><strong>HDJ2123F</strong>
+				</div> -->
+			</div>
+			<br>
+			<p>
+			 We’ve sent a link to the school’s email address at
+			</p>
+			<p>
+				<strong>
+					L*****e@abc-school.com
+				</strong>
+			</p>
+
+			<h2 class="govuk-heading-m">
+				What happens next
+			</h2>
+
+			<ol class="govuk-list govuk-list--number">
+				<li>
+					Check you have received the email.
+				</li>
+				<li>
+					Sign in to the service using the link in the email.
+				</li>
+				<li>
+					Nominate a new school induction tutor.
+				</li>
+				<li>
+					The new induction tutor will get an email with a link to sign in and start using the service.
+				</li>
+				
+			</ol>
+
+
+		</div>
+	</div>
+
+{% endblock %}

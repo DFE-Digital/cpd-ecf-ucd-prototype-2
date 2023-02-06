@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+	Start page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+	<!-- Blank header with no service name for the start page -->
+	{{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+<!-- 	<div class="govuk-breadcrumbs">
+		<ol class="govuk-breadcrumbs__list">
+			<li class="govuk-breadcrumbs__list-item">
+				<a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+			</li>
+			<li class="govuk-breadcrumbs__list-item">
+				<a class="govuk-breadcrumbs__link" href="#">Section</a>
+			</li>
+			<li class="govuk-breadcrumbs__list-item">
+				<a class="govuk-breadcrumbs__link">Subsection</a>
+			</li>
+		</ol>
+	</div> -->
+{% endblock %}
+
+{% block content %}
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+
+			<h1 class="govuk-heading-xl">
+				{% if serviceName %} {{ serviceName }} {% endif %}
+			</h1>
+
+			<p>
+				Use this service to set up ECF-based training for your early career teachers (ECTs) or tell us about a change at your school.
+			</p>
+
+			<h2 class="govuk-heading-m">
+				Set up your training
+			</h2>
+
+			<p>
+				Sign in to tell us:
+			</p>
+
+			<ul class="govuk-list govuk-list--bullet">
+				<li>
+					how you want to run your training
+				</li>
+				<li>
+					which accredited materials or training provider you’ll use
+				</li>
+				<li>
+					which ECTs and mentors will take part
+				</li>
+			</ul>
+
+			<p>
+				Your school must complete these steps before your ECTs can start their statutory induction programme.
+			</p>
+
+			<h2 class="govuk-heading-m">
+				Tell us about changes at your school
+			</h2>
+
+			<p>
+				Tell us about any changes, for example, nominating a new Induction tutor.
+			</p>
+
+			<a href="sign-in" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+				Sign in
+				<svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+					<path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+				</svg>
+			</a>
+
+		</div>
+
+		<div class="govuk-grid-column-one-third">
+
+			<aside class="app-related-items" role="complementary">
+				<h2 class="govuk-heading-m" id="subsection-title">
+					Guidance
+				</h2>
+				<nav role="navigation" aria-labelledby="subsection-title">
+					<ul class="govuk-list govuk-!-font-size-16">
+						<li>
+							<a href="https://manage-training-for-early-career-teachers.education.gov.uk/how-to-set-up-your-programme" target="_blank">Read our step by step guidance</a> for more information about setting up your training.
+						</li>
+						<li>
+							<a href="https://www.gov.uk/government/collections/induction-training-and-support-for-early-career-teachers-ects" target="_blank">Read our guidance for early career teachers</a> for more information about the programme and your entitlements.
+						</li>
+						<li>
+							<a href="https://www.gov.uk/guidance/guidance-for-schools-how-to-manage-ecf-based-training">Read our guidance for mentors</a> for more information about how to support early career teachers.
+						</li>
+					</ul>
+				</nav>
+			</aside>
+
+		</div>
+	</div>
+{% endblock %}

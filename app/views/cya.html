@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+	Check your answers template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+	<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds-from-desktop">
+
+			<h1 class="govuk-heading-xl">
+				Confirm this is your school
+			</h1>
+
+			<h2 class="govuk-heading-m">Personal details</h2>
+
+			<dl class="govuk-summary-list govuk-!-margin-bottom-9">
+				<div class="govuk-summary-list__row">
+					<dt class="govuk-summary-list__key">
+						Name
+					</dt>
+					<dd class="govuk-summary-list__value">
+						<!-- ABC School -->
+						 {{ data['school-name']}}
+					</dd>
+					<dd class="govuk-summary-list__actions">
+						<a href="/request-link-3">
+							Change
+							<span class="govuk-visually-hidden"> name</span>
+						</a>
+					</dd>
+				</div>
+				<div class="govuk-summary-list__row">
+					<dt class="govuk-summary-list__key">
+						URN
+					</dt>
+					<dd class="govuk-summary-list__value">
+						20307
+					</dd>
+					<dd class="govuk-summary-list__actions">
+						<!-- <a href="#">
+							Change
+							<span class="govuk-visually-hidden"> date of birth</span>
+						</a> -->
+					</dd>
+				</div>
+				<div class="govuk-summary-list__row">
+					<dt class="govuk-summary-list__key">
+						Address
+					</dt>
+					<dd class="govuk-summary-list__value">
+						{{ data['school-name']}}<br>
+						10 Little Green<br>
+						Richmond<br>
+						TW9 1QH
+					</dd>
+					<dd class="govuk-summary-list__actions">
+						<!-- <a href="#">
+							Change
+							<span class="govuk-visually-hidden"> contact information</span>
+						</a> -->
+					</dd>
+				</div>
+			</dl>
+
+			<form action="/confirmation" method="post" novalidate>
+
+				<input type="hidden" name="answers-checked" value="true">
+
+				<button type="submit" class="govuk-button" data-module="govuk-button">
+					Confirm and send
+				</button>
+
+			</form>
+
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+	Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+	<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+
+			<h1 class="govuk-heading-xl">
+				Sign in
+			</h1>
+
+			<form class="form" action="#" method="post">
+
+				<div class="govuk-form-group">
+					<label class="govuk-label" for="user-email-field">
+						Email address
+					</label>
+					<input class="govuk-input" id="user-email-field" name="user-email-field" type="email" spellcheck="false">
+				</div>
+
+				<button class="govuk-button" data-module="govuk-button">Sign in</button>
+
+				<p>
+					<a href="/send-school-link">
+						Request a link to sign in or change the induction tutor
+					</a>
+				</p>
+
+			</form>
+
+		</div>
+	</div>
+
+{% endblock %}
