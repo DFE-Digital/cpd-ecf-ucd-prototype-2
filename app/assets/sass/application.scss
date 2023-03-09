@@ -18,6 +18,102 @@ $govuk-assets-path: '/govuk/assets/';
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
 
+.govuk-summary-list--no-border .govuk-summary-list__actions {
+  padding-bottom: 0;
+}
+
+.govuk-summary-list__actions {
+  margin-bottom: 0 !important;
+  padding-top:0 !important;
+  
+}
+
+.govuk-summary-list__key-manage-participants {
+  padding-top: 2;
+  padding-bottom: 2;
+}
+.govuk-summary-list__value-manage-participants {
+  padding-top: 2;
+  padding-bottom: 2;
+}
+.govuk-summary-list__actions-manage-participants {
+  padding-top: 2;
+  padding-bottom: 2;
+}
+
+.govuk-summary-list-card {
+  padding-top: 2;
+  padding-bottom: 2;
+}
+
+.govuk-summary-list--no-border {
+  .govuk-summary-list__value {
+    padding-bottom: 0;
+  }
+}
+
+
 .tag-version {
   margin-bottom: 50px;
+}
+
+.govuk-summary-list__actions-custom-1 {
+  width: 40%;
+  text-align: left;
+}
+
+/*.govuk-summary-list__actions-custom-inset {
+    padding-left: 10px;
+}
+*/
+
+.govuk-summary-list__key {
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+/*.govuk-summary-list--single-border {
+    border-bottom: 1px solid #b1b4b6;
+}
+*/
+.govuk-summary-list__key {
+  h3 {
+    color: #505a5f;
+  }
+}
+
+.alert {
+  padding-left: 15px;
+  border-left: 5px solid #d4351c;
+}
+
+.govuk-warning-text__icon-custom-1 {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    margin-top: -7px;
+    border: 3px solid #0b0c0c;
+    border-radius: 50%;
+    color: #ffffff;
+    background: #0b0c0c;
+    font-size: 23px;
+    line-height: 19px;
+    text-align: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 4px;
+    forced-color-adjust: none;
+}
+
+.govuk-summary-list__actions {
+  padding-bottom: 0 !important;
 }
