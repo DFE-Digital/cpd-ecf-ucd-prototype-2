@@ -12003,3 +12003,58 @@ span.moj-header__link:hover {
 .govuk-summary-list__actions {
   padding-bottom: 0 !important;
 }
+
+.js-enabled .govuk-tabs__panel {
+  margin-bottom: 0;
+  padding: 0;
+  border: none;
+  border-top: 0;
+}
+
+.js-enabled .govuk-tabs__panel {
+  margin-bottom: 0;
+  padding: 0;
+  border: none;
+  border-top: 0;
+  padding-top: 10px;
+}
+
+/* START: test - pls ignore - work in progress...
+.js-enabled .govuk-tabs__list-item {
+    position: relative;
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 10px 20px;
+    float: left;
+    background-color: #fff;
+    text-align: center;
+}
+
+.js-enabled .govuk-tabs__list-item--selected {
+    position: relative;
+    margin-top: -5px;
+    margin-bottom: -1px;
+    padding-top: 14px;
+    padding-right: 19px;
+    padding-bottom: 8px;
+    padding-left: 0;
+    border: none;
+    border-bottom: 0;
+    background-color: #ffffff;
+    border-bottom: 6px solid #1d70b8;
+}
+
+
+.js-enabled {
+  .govuk-tabs__tab:link {
+      color: #1d70b8;
+      text-decoration: none;
+  }
+  govuk-tabs__tab:visited {
+      color: #1d70b8;
+      text-decoration: none;
+  }
+}
+END: test - pls ignore - work in progress...
+*/
