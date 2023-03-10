@@ -8470,6 +8470,9 @@ span.moj-header__link:hover {
   }
   */
 }
+.wrapper-dashboard-v2.manage-mentors-ects .govuk-summary-list--no-border .govuk-summary-list__row {
+  margin-bottom: 0;
+}
 .wrapper-dashboard-v2.manage-mentors-ects .govuk-summary-list--no-border .govuk-summary-list__key {
   padding-top: 3px;
   padding-bottom: 3px;

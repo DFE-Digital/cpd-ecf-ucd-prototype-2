@@ -21,6 +21,8 @@ $govuk-assets-path: '/govuk/assets/';
 
 $desktop: 40.625em;
 
+$mob: 40.0525em;
+
 // Manage your training (Dashboard / landing page)
 .wrapper-dashboard-v2 {
 
@@ -91,6 +93,10 @@ $desktop: 40.625em;
 			}
 		}
 		*/
+
+		.govuk-summary-list__row {
+		    margin-bottom: 0;
+		}
 
 		.govuk-summary-list__key {
 			padding-top: 3px;
