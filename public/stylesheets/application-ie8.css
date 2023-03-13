@@ -8421,6 +8421,11 @@ span.moj-header__link:hover {
   padding-top: 10px;
 }
 
+@media (min-width: 40.625em) {
+  .wrapper-dashboard-v2.manage-mentors-ects .govuk-warning-text {
+    margin-bottom: 15px;
+  }
+}
 .wrapper-dashboard-v2.manage-mentors-ects .alert {
   padding-left: 10px;
   border-left: 5px solid #d4351c;

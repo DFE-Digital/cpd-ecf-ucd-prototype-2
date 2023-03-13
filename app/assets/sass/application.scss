@@ -39,6 +39,12 @@ $mob: 40.0525em;
 // Manage mentors and ECTs
 .wrapper-dashboard-v2.manage-mentors-ects {
 
+	.govuk-warning-text {
+		@media (min-width: 40.625em) {
+			margin-bottom: 15px;
+		}
+	}
+
 	.alert {
 		padding-left: 10px;
 		border-left: 5px solid #d4351c;
