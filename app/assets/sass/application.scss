@@ -20,11 +20,33 @@ $govuk-assets-path: '/govuk/assets/';
 
 
 $desktop: 40.625em;
-
 $mob: 40.0525em;
 
+header {
+	.govuk-heading-xl {
+		@media (min-width: $desktop) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+
 // Manage your training (Dashboard / landing page)
+
 .wrapper-dashboard-v2 {
+
+	.govuk-summary-list__key {
+		@media (min-width: $desktop) {
+		    padding-right: 10px;
+		    width: 31%;
+		}
+	}
+
+	.govuk-summary-list__actions {
+		@media (min-width: $desktop) {
+			 width: 13%;
+		}
+	}
 
 	.govuk-tabs__panel {
 		margin-bottom: 0;
@@ -77,9 +99,24 @@ $mob: 40.0525em;
 	}
 
 	h3 {
-		color: #505a5f;
+		
 		margin-bottom: 0;
 	}
+
+	.group-card {
+		border: 1px solid #B1B4B6;
+		padding: 10px;
+	}
+
+	.group-card {
+		@media (min-width: $desktop) {
+			padding: 20px;
+		}
+		.govuk-summary-list {
+	    	margin-bottom: 0;
+		}
+	}
+
 
 
 	.govuk-summary-list__actions {
@@ -89,30 +126,27 @@ $mob: 40.0525em;
 
 	.govuk-summary-list--no-border {
 
-		/*
-		.govuk-summary-list__row.etc {
-			dd {
-				&:first-child {
-					border-left: 2px solid grey;
-					padding-left: 20px;
-				}
-			}
-		}
-		*/
-
 		.govuk-summary-list__row {
 		    margin-bottom: 0;
 		}
-
+	
 		.govuk-summary-list__key {
 			padding-top: 3px;
 			padding-bottom: 3px;
 			margin-bottom: 5px;
 		}
 		.govuk-summary-list__value {
-			padding-top: 3px;
-			padding-bottom: 3px;
+		    padding-top: 3px;
+			padding-bottom: 7px;
 			margin-bottom: 5px;
+		}
+		.govuk-summary-list__value {
+			@media (min-width: $desktop) {
+			    padding-top: 3px;
+				padding-bottom: 14px;
+				margin-bottom: 5px;
+			}
+			
 		}
 		.govuk-summary-list__actions {
 			padding-top: 3px;

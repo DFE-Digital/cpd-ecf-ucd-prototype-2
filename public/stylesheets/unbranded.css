@@ -11911,6 +11911,23 @@ span.moj-header__link:hover {
   }
 }
 
+@media (min-width: 40.625em) {
+  header .govuk-heading-xl {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 40.625em) {
+  .wrapper-dashboard-v2 .govuk-summary-list__key {
+    padding-right: 10px;
+    width: 31%;
+  }
+}
+@media (min-width: 40.625em) {
+  .wrapper-dashboard-v2 .govuk-summary-list__actions {
+    width: 13%;
+  }
+}
 .wrapper-dashboard-v2 .govuk-tabs__panel {
   margin-bottom: 0;
   padding: 0;
@@ -11954,24 +11971,23 @@ span.moj-header__link:hover {
   forced-color-adjust: none;
 }
 .wrapper-dashboard-v2.manage-mentors-ects h3 {
-  color: #505a5f;
+  margin-bottom: 0;
+}
+.wrapper-dashboard-v2.manage-mentors-ects .group-card {
+  border: 1px solid #B1B4B6;
+  padding: 10px;
+}
+@media (min-width: 40.625em) {
+  .wrapper-dashboard-v2.manage-mentors-ects .group-card {
+    padding: 20px;
+  }
+}
+.wrapper-dashboard-v2.manage-mentors-ects .group-card .govuk-summary-list {
   margin-bottom: 0;
 }
 .wrapper-dashboard-v2.manage-mentors-ects .govuk-summary-list__actions {
   width: 40%;
   text-align: left;
-}
-.wrapper-dashboard-v2.manage-mentors-ects .govuk-summary-list--no-border {
-  /*
-  .govuk-summary-list__row.etc {
-  	dd {
-  		&:first-child {
-  			border-left: 2px solid grey;
-  			padding-left: 20px;
-  		}
-  	}
-  }
-  */
 }
 .wrapper-dashboard-v2.manage-mentors-ects .govuk-summary-list--no-border .govuk-summary-list__row {
   margin-bottom: 0;
@@ -11983,8 +11999,15 @@ span.moj-header__link:hover {
 }
 .wrapper-dashboard-v2.manage-mentors-ects .govuk-summary-list--no-border .govuk-summary-list__value {
   padding-top: 3px;
-  padding-bottom: 3px;
+  padding-bottom: 7px;
   margin-bottom: 5px;
+}
+@media (min-width: 40.625em) {
+  .wrapper-dashboard-v2.manage-mentors-ects .govuk-summary-list--no-border .govuk-summary-list__value {
+    padding-top: 3px;
+    padding-bottom: 14px;
+    margin-bottom: 5px;
+  }
 }
 .wrapper-dashboard-v2.manage-mentors-ects .govuk-summary-list--no-border .govuk-summary-list__actions {
   padding-top: 3px;

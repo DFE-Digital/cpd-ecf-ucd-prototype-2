@@ -1,0 +1,255 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+	Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+	<a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+
+			<span class="govuk-caption-l">
+				ABC School
+			</span>
+			<h1 class="govuk-heading-xl">
+				Manage mentors and ECTs
+			</h1>
+
+			<form class="form" action="#" method="post">
+
+				<div class="wrapper-dashboard-v2 manage-mentors-ects">
+
+					<button class="govuk-button" data-module="govuk-button">
+						Add ECT or mentor
+					</button>
+
+					<br>
+
+					<div class="govuk-warning-text">
+						<span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+					<strong class="govuk-warning-text__text">
+						<span class="govuk-warning-text__assistive">Warning</span>
+							You need to assign a mentor to these ETCs.
+						</strong>
+					</div> <!-- /.govuk-warning-text -->
+
+					<ul class="govuk-list">
+						<li>
+							<a class="govuk-link" href="#">Louise Petros</a>
+						</li>
+					</ul>
+					
+					<br>
+
+					<!-- summary - mentor and assigned ECTs -->
+
+					<div class="group-card">
+						<dl class="govuk-summary-list govuk-summary-list--no-border">
+							
+							<div class="govuk-summary-list__row govuk-summary-list__row">
+								<dt class="govuk-summary-list__key govuk-summary-list__key-manage-participants">
+									<h3 class="govuk-heading-s">Mentor</h3>
+								</dt>
+							</div>
+
+							<div class="govuk-summary-list__row">
+								<dd class="govuk-summary-list__actions">
+									<a class="govuk-link" href="/dashboard-v2-6-1/participant-mentor-hayate-jannat">
+										Hayate Jannat<span class="govuk-visually-hidden"> mentor</span>
+									</a>
+								</dd>
+								<dd class="govuk-summary-list__value govuk-summary-list__value-manage-participants">
+									<strong class="govuk-tag govuk-tag--green">
+										Mentoring	
+									</strong>
+								</dd>
+							</div>
+							
+							<div class="govuk-summary-list__row">
+								<dt class="govuk-summary-list__key govuk-summary-list__key-manage-participants">
+									<h3 class="govuk-heading-s">ECTs</h3>
+								</dt>
+							</div>
+							
+							<div class="govuk-summary-list__row etc">
+								<dd class="govuk-summary-list__actions ">
+									<a class="govuk-link" href="/dashboard-v2-6-1/participant-ect-emmanuel-takumi">
+										Emmanuel Takumi<span class="govuk-visually-hidden"> ect</span>
+									</a>
+								</dd>
+								<dd class="govuk-summary-list__value govuk-summary-list__value-manage-participants">
+									<strong class="govuk-tag govuk-tag--grey">
+										TRAINING DEFERRED
+									</strong>
+								</dd>
+							</div>
+							
+							<div class="govuk-summary-list__row etc">
+								<dd class="govuk-summary-list__actions ">
+									<a class="govuk-link" href="/dashboard-v2-6-1/participant-ect-keisha-edwina">
+										Keisha Edwina<span class="govuk-visually-hidden"> ect</span>
+									</a>
+								</dd>
+								<dd class="govuk-summary-list__value govuk-summary-list__value-manage-participants ">
+									<strong class="govuk-tag govuk-tag--green">
+										Training
+									</strong>
+								</dd>
+							</div>
+						</dl>
+					</div> <!-- /.group-card -->
+
+					<br>
+
+					<div class="group-card">
+						<dl class="govuk-summary-list govuk-summary-list--no-border">
+							
+							<div class="govuk-summary-list__row govuk-summary-list__row">
+								<dt class="govuk-summary-list__key govuk-summary-list__key-manage-participants">
+									<h3 class="govuk-heading-s">Mentor</h3>
+								</dt>
+							</div>
+
+							<div class="govuk-summary-list__row">
+								<dd class="govuk-summary-list__actions">
+									<a class="govuk-link" href="/dashboard-v2-6-1/participant-mentor-marcy-erna">
+										Jan Tracey<span class="govuk-visually-hidden"> mentor</span>
+									</a>
+								</dd>
+								<dd class="govuk-summary-list__value govuk-summary-list__value-manage-participants">
+									<strong class="govuk-tag govuk-tag--green">
+										Mentoring	
+									</strong>
+								</dd>
+							</div>
+							
+							<div class="govuk-summary-list__row">
+								<dt class="govuk-summary-list__key govuk-summary-list__key-manage-participants">
+									<h3 class="govuk-heading-s">ECTs</h3>
+								</dt>
+							</div>
+							
+							<div class="govuk-summary-list__row etc">
+								<dd class="govuk-summary-list__actions ">
+									<a class="govuk-link" href="/dashboard-v2-6-1/participant-ect-kirsty-alexandra">
+										Laurence Firoozeh<span class="govuk-visually-hidden"> ect</span>
+									</a>
+								</dd>
+								<dd class="govuk-summary-list__value govuk-summary-list__value-manage-participants ">
+									<strong class="govuk-tag govuk-tag--green">
+										Training
+									</strong>
+								</dd>
+							</div>
+
+							<div class="govuk-summary-list__row etc">
+								<dd class="govuk-summary-list__actions ">
+									<a class="govuk-link" href="/dashboard-v2-6-1/participant-ect-memet-jacob">
+										Susanna Pelo<span class="govuk-visually-hidden"> ect</span>
+									</a>
+								</dd>
+								<dd class="govuk-summary-list__value govuk-summary-list__value-manage-participants">
+									<strong class="govuk-tag govuk-tag--grey">
+										WAITING FOR QTS
+									</strong>
+								</dd>
+							</div>
+						</dl>
+					</div> <!-- /.group-card -->
+
+					<br>
+
+					<div class="group-card">
+						<dl class="govuk-summary-list govuk-summary-list--no-border">
+							
+							<div class="govuk-summary-list__row govuk-summary-list__row">
+								<dt class="govuk-summary-list__key govuk-summary-list__key-manage-participants">
+									<h3 class="govuk-heading-s">Mentor</h3>
+								</dt>
+							</div>
+
+							<div class="govuk-summary-list__row">
+								<dd class="govuk-summary-list__actions">
+									<a class="govuk-link" href="/dashboard-v2-6-1/participant-mentor-marcy-erna">
+										Marcy Erna<span class="govuk-visually-hidden"> mentor</span>
+									</a>
+								</dd>
+								<dd class="govuk-summary-list__value govuk-summary-list__value-manage-participants">
+									<strong class="govuk-tag govuk-tag--green">
+										Mentoring	
+									</strong>
+								</dd>
+							</div>
+							
+							<div class="govuk-summary-list__row">
+								<dt class="govuk-summary-list__key govuk-summary-list__key-manage-participants">
+									<h3 class="govuk-heading-s">ECTs</h3>
+								</dt>
+							</div>
+							
+							<div class="govuk-summary-list__row etc">
+								<dd class="govuk-summary-list__actions ">
+									<a class="govuk-link" href="/dashboard-v2-6-1/participant-ect-memet-jacob">
+										Memet Jacob<span class="govuk-visually-hidden"> ect</span>
+									</a>
+								</dd>
+								<dd class="govuk-summary-list__value govuk-summary-list__value-manage-participants">
+									<strong class="govuk-tag govuk-tag--green">
+										Training
+									</strong>
+								</dd>
+							</div>
+							
+							<div class="govuk-summary-list__row etc">
+								<dd class="govuk-summary-list__actions ">
+									<a class="govuk-link" href="/dashboard-v2-6-1/participant-ect-kirsty-alexandra">
+										Kirsty Alexandra<span class="govuk-visually-hidden"> ect</span>
+									</a>
+								</dd>
+								<dd class="govuk-summary-list__value govuk-summary-list__value-manage-participants ">
+									<strong class="govuk-tag govuk-tag--green">
+										Training
+									</strong>
+								</dd>
+							</div>
+						</dl>
+					</div> <!-- /.group-card -->
+
+					<br>
+
+					<dl class="govuk-summary-list govuk-summary-list--no-border">
+							
+							<div class="govuk-summary-list__row govuk-summary-list__row">
+								<dt class="govuk-summary-list__key govuk-summary-list__key-manage-participants">
+									<h3 class="govuk-heading-s">Mentor</h3>
+								</dt>
+							</div>
+
+							<div class="govuk-summary-list__row">
+								<dd class="govuk-summary-list__actions">
+									<a class="govuk-link" href="/dashboard-v2-6-1/participant-mentor-marcy-erna">
+										Nandita Carla<span class="govuk-visually-hidden"> mentor</span>
+									</a>
+								</dd>
+								<dd class="govuk-summary-list__value govuk-summary-list__value-manage-participants">
+									<strong class="govuk-tag govuk-tag--grey">
+										NOT MENTORING
+									</strong>
+								</dd>
+						
+							</div>
+						</dl>
+
+				</div> <!-- /.wrapper-dashboard-v2 -->
+
+			</form>
+
+		</div>
+	</div>
+
+{% endblock %}
