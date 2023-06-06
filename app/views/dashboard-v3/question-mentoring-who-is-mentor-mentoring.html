@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:window.history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <!-- <h1 class="govuk-heading-xl">Heading or question goes here</h1> -->
+
+     <form class="form" action="/dashboard-v3/question-mentoring-confirmation" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading govuk-heading-xl">Who is [mentor name] mentoring?</h1>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="ect-1" name="mentor-ect" type="radio" value="ect-1">
+                <label class="govuk-label govuk-radios__label" for="ect-1">[ECT name 1]</label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="ect-2" name="mentor-ect" type="radio" value="ect-2">
+                <label class="govuk-label govuk-radios__label" for="ect-2">[ECT name 2]</label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="ect-3" name="mentor-ect" type="radio" value="ect-3">
+                <label class="govuk-label govuk-radios__label" for="ect-3">[ECT name 3]</label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="ect-4" name="mentor-ect" type="radio" value="ect-4">
+                <label class="govuk-label govuk-radios__label" for="ect-4">[ECT name 4]</label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="ect-5" name="mentor-ect" type="radio" value="ect-5">
+                <label class="govuk-label govuk-radios__label" for="ect-5">[ECT name 5]</label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="ect-6" name="mentor-ect" type="radio" value="ect-6">
+                <label class="govuk-label govuk-radios__label" for="ect-6">[ECT name 6]</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+         Continue
+        </button>
+
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,184 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+	Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+	{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+	{{ govukBreadcrumbs({
+	  items: [
+	    {
+	      text: "Manage your training",
+	      href: "/dashboard-v3/dashboard-v2-6"
+	    },
+	    {
+	      text: "Manage mentors and ECTs",
+	      href: "/dashboard-v3/manage-mentors-and-ects-alert-1"
+	    },
+	    {
+	      text: "Hayate Jannat",
+	      href: "/dashboard-v3/participant-mentor-hayate-jannat"
+	    }
+	  ]
+	}) }}
+{% endblock %}
+
+{% block content %}
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+
+			<form class="form" action="/dashboard-v3/manage-mentors-and-ects-alert-1" method="post">
+
+				<span class="govuk-caption-l">
+					ABC School
+				</span>
+				<h1 class="govuk-heading-xl">
+					Hayate Jannat
+				</h1>
+				<h2 class="govuk-heading-l">
+					Mentor
+				</h2>
+
+				<!-- summary - participant - mentor -->
+				<dl class="govuk-summary-list">
+					<div class="govuk-summary-list__row">
+						<dt class="govuk-summary-list__key">
+							Status
+						</dt>
+						<dd class="govuk-summary-list__value">
+							<p class="govuk-body">
+								<strong class="govuk-tag govuk-tag--green">
+									Training
+								</strong>
+							</p>
+							<p class="govuk-body">
+								We’ve confirmed the participant is eligible for this programme.
+							</p>
+						</dd>
+					</div>
+					<div class="govuk-summary-list__row">
+						<dt class="govuk-summary-list__key">
+							Name
+						</dt>
+						<dd class="govuk-summary-list__value">
+							Hayate Jannat
+						</dd>
+						<dd class="govuk-summary-list__actions">
+							<a class="govuk-link" href="#">
+								Change<span class="govuk-visually-hidden"> name</span>
+							</a>
+						</dd>
+					</div>
+					
+					<div class="govuk-summary-list__row">
+						<dt class="govuk-summary-list__key">
+							TRN
+						</dt>
+						<dd class="govuk-summary-list__value">
+							7384926
+						</dd>
+					</div>
+					
+					<div class="govuk-summary-list__row">
+						<dt class="govuk-summary-list__key">
+							Date of birth
+						</dt>
+						<dd class="govuk-summary-list__value">
+							1 February 1990
+						</dd>
+					</div>
+					
+					<div class="govuk-summary-list__row">
+						<dt class="govuk-summary-list__key">
+							Email address
+						</dt>
+						<dd class="govuk-summary-list__value">
+							hayate.jannat@school.com
+						</dd>
+					</div>
+					<div class="govuk-summary-list__row">
+						<dt class="govuk-summary-list__key">
+							Lead provider
+						</dt>
+						<dd class="govuk-summary-list__value">
+							Ambition Institute
+						</dd>
+					</div>
+					<div class="govuk-summary-list__row">
+						<dt class="govuk-summary-list__key">
+							Delivery partner
+						</dt>
+						<dd class="govuk-summary-list__value">
+							GLF Wiltshire Teaching School Hub
+						</dd>
+					</div>
+					<div class="govuk-summary-list__row">
+						<dt class="govuk-summary-list__key">
+							Appropriate body
+						</dt>
+						<dd class="govuk-summary-list__value">
+							National Teacher Accreditation
+						</dd>
+					</div>
+				</dl>
+				<!-- /summary - participant - mentor -->
+
+				<h3 class="govuk-heading-m">
+					Hayate’s ECTs
+				</h3>
+
+				<!-- summary - participants - mentor's ECTs -->
+				<dl class="govuk-summary-list">
+					<div class="govuk-summary-list__row">
+						<dd class="govuk-summary-list__value">
+							Emmanuel Takumi
+						</dd>
+						<dd class="govuk-summary-list__value">
+							
+						</dd>
+						<dd class="govuk-summary-list__actions">
+							<a class="govuk-link" href="#">
+								Change<span class="govuk-visually-hidden"> ect</span>
+							</a>
+						</dd>
+					</div>
+					<div class="govuk-summary-list__row">
+						<dd class="govuk-summary-list__value">
+							Keisha Edwina
+						</dd>
+						<dd class="govuk-summary-list__value">
+							
+						</dd>
+						<dd class="govuk-summary-list__actions">
+							<a class="govuk-link" href="#">
+								Change<span class="govuk-visually-hidden"> ect</span>
+							</a>
+						</dd>
+					</div>
+					
+				</dl>
+				<!-- /summary - participants - mentor's ECTs -->
+
+				<h4 class="govuk-heading-m">
+					No longer training?
+				</h4>
+				<p class="govuk-body">Tell us if  <a href="#" class="govuk-link">Hayate Jannat is transferring to another school</a>.</p>
+
+				<p class="govuk-body">
+					Contact your training provider if you wish to remove this participant.
+				</p>
+				<br>
+
+				<button class="govuk-button" data-module="govuk-button">
+					Back to manage mentors and ECTs
+				</button>
+
+			</form>
+
+		</div>
+	</div>
+
+{% endblock %}

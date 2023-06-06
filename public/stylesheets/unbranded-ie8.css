@@ -8487,6 +8487,19 @@ span.moj-header__link:hover {
 .wrapper-dashboard-v2.manage-mentors-ects .group-card .govuk-summary-list {
   margin-bottom: 0;
 }
+.wrapper-dashboard-v2.manage-mentors-ects .group-card-no-border {
+  border: none;
+  padding: 10px;
+}
+@media (min-width: 40.625em) {
+  .wrapper-dashboard-v2.manage-mentors-ects .group-card-no-border {
+    padding: 20px;
+    padding-top: 0;
+  }
+}
+.wrapper-dashboard-v2.manage-mentors-ects .group-card-no-border .govuk-summary-list {
+  margin-bottom: 0;
+}
 .wrapper-dashboard-v2.manage-mentors-ects .govuk-summary-list__actions {
   width: 40%;
   text-align: left;
