@@ -48,6 +48,14 @@
     serviceUrl: "/",
     containerClasses: "govuk-width-container"
   }) }}
+<div class="govuk-width-container">
+  {{ govukPhaseBanner({
+    tag: {
+      text: "Prototype"
+    },
+    html: 'This is a prototype. It is not a real service.'
+  }) }}
+</div>
 {% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
